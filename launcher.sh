@@ -3,7 +3,7 @@
 echo '{
   "name": "Narma",
   "main": "'$1'",
-  "node-remote":"<local>",
+  "node-remote": ["'$1'"],
   "window": {
     "title": "Narma",
     "toolbar": true,
@@ -17,4 +17,4 @@ echo '{
   }
 }' > test/package.json
 
-nodewebkit test/
+./node_modules/.bin/nw test/

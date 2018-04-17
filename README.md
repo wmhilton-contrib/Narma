@@ -7,11 +7,6 @@ So I thought to write a script launcher and unit test my node code in a nodewebk
 To install:
 
       npm install
-      npm install -g nodewebkit
-
-install the cli globally
-
-      npm install -g karma-cli
       
 To run, you **must change** the path to the launcher script in [**karam.conf.js**](https://github.com/noamtcohen/Narma/blob/master/karma.conf.js#L59)
 
@@ -23,10 +18,7 @@ Make sure you use an absolute path and front slashes on windows too.
 
 and then run:
 
-      karma start
-
-
-
+      npm test
 
 Checkout [test/test.js](https://github.com/noamtcohen/Narma/blob/master/test/test.js) and [app/weserver.js](https://github.com/noamtcohen/Narma/blob/master/app/webserver.js) to see exapmles of what you can do.
 

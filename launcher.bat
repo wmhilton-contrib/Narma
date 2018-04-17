@@ -1,7 +1,7 @@
 echo {                            >  test/package.json
 echo  "name": "Narma",            >> test/package.json
 echo    "main": "%1%",            >> test/package.json
-echo    "node-remote":"<local>",  >> test/package.json
+echo    "node-remote": ["%1"],    >> test/package.json
 echo    "window": {               >> test/package.json
 echo      "title": "Narma",       >> test/package.json
 echo      "toolbar": true,        >> test/package.json
@@ -15,4 +15,4 @@ echo  	"plugin": true            >> test/package.json
 echo    }                         >> test/package.json
 echo }                            >> test/package.json
 
-nodewebkit test/
+"node_modules/.bin/nw" test/
